@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/curve"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/curve2">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THỐNG KÊ"
+            android:textColor="#E4ECDC"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sumBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng số cầu thủ đã mua: "
+            android:textColor="#1A1A12"
+            android:layout_marginBottom="5dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/sumSell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng số cầu thủ đã bán: "
+            android:layout_marginBottom="5dp"
+            android:textColor="#1A1A12"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/sumBuyCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng số tiền mua cầu thủ: "
+            android:layout_marginBottom="5dp"
+            android:textColor="#1A1A12"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/sumSellCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng số tiền bán cầu thủ: "
+            android:layout_marginBottom="5dp"
+            android:textColor="#1A1A12"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/maxBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hợp đồng mua đắt giá nhất: "
+            android:layout_marginBottom="5dp"
+            android:textColor="#1A1A12"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/maxSell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hợp đồng bán đắt giá nhất: "
+            android:layout_marginBottom="5dp"
+            android:textColor="#1A1A12"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#E3E9DD"
+        android:background="@drawable/selector"
+        android:id="@+id/out_ok"
+        android:textAllCaps="false"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="OK"/>
+</LinearLayout>

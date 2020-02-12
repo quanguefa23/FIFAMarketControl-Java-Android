@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/add"
+        android:orderInCategory="0"
+        android:icon="@drawable/add"
+        android:title="Thêm cầu thủ"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:orderInCategory="1"
+        android:id="@+id/statistic"
+        android:title="Thống kê">
+    </item>
+
+    <item
+        android:orderInCategory="2"
+        android:id="@+id/export"
+        android:title="Xuất dữ liệu">
+    </item>
+
+    <item android:orderInCategory="3"
+        android:title="Sắp xếp theo tên">
+        <menu>
+            <item
+                android:id="@+id/sortByName1"
+                android:title="Tăng dần"/>
+            <item
+                android:id="@+id/sortByName2"
+                android:title="Giảm dần"/>
+        </menu>
+    </item>
+
+    <item android:orderInCategory="4"
+        android:title="Sắp xếp theo giá">
+        <menu>
+            <item
+                android:id="@+id/sortByPrice1"
+                android:title="Tăng dần"/>
+            <item
+                android:id="@+id/sortByPrice2"
+                android:title="Giảm dần"/>
+        </menu>
+    </item>
+
+    <item android:orderInCategory="5"
+        android:title="Sắp xếp theo thời gian">
+        <menu>
+            <item
+                android:id="@+id/sortByDate1"
+                android:title="Tăng dần"/>
+            <item
+                android:id="@+id/sortByDate2"
+                android:title="Giảm dần"/>
+        </menu>
+    </item>
+
+</menu>

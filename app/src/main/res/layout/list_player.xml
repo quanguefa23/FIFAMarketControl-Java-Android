@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#F3F3ED"
+    android:id="@+id/layoutPlayer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Virgil van Dijk"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:textAllCaps="true"
+            android:id="@+id/position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:text="cm"
+            android:textColor="#834F00"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:textColor="#3F51B5"
+            android:id="@+id/ovr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_toEndOf="@+id/position"
+            android:text="88"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="2dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/isBuy"
+            android:textColor="#F44336"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BUY"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="20/10/2019"
+            android:layout_below="@+id/isBuy"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/buttonupdown"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:text="5060"
+        android:layout_marginEnd="20dp"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_marginEnd="5dp"
+        android:id="@+id/buttonupdown"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/up"
+            android:scaleY="0.7"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/up"/>
+        <ImageView
+            android:scaleY="0.7"
+            android:layout_marginTop="7dp"
+            android:id="@+id/down"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/down"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

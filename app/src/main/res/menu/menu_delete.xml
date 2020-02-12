@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Đưa lên đầu"
+        android:id="@+id/movetop"/>
+
+    <item android:title="Đẩy xuống cuối"
+        android:id="@+id/movebottom"/>
+
+    <item android:id="@+id/edit"
+        android:title="Sửa hợp đồng"/>
+
+    <item android:id="@+id/delete"
+        android:title="Xóa hợp đồng"/>
+</menu>

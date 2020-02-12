@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/curve"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#495F2E">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THÊM HỢP ĐỒNG"
+            android:textColor="#E4ECDC"
+            android:textAllCaps="true"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mua hay bán: "
+            android:layout_marginStart="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#1A1A12"
+            android:textSize="15sp"
+            />
+        <RadioGroup
+            android:id="@+id/buyOrSell"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/isBuy"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/isBuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:buttonTint="#495F2E"
+                android:text="Mua"/>
+            <RadioButton
+                android:buttonTint="#495F2E"
+                android:layout_marginEnd="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/isSell"
+                android:text="Bán"/>
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên cầu thủ: "
+            android:layout_marginStart="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#1A1A12"
+            android:textSize="15sp"
+            />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/name"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/et_custom"
+            android:ems="10"
+            android:textSize="15sp"
+            android:hint="Ví dụ: Ronaldo"
+            android:inputType="textPersonName"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vị trí thi đấu: "
+            android:layout_marginStart="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#1A1A12"
+            android:textSize="15sp"
+            />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/position"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/et_custom"
+            android:ems="10"
+            android:textSize="15sp"
+            android:hint="Ví dụ: GK"
+            android:inputType="text"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chỉ số trung bình: "
+            android:layout_marginStart="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#1A1A12"
+            android:textSize="15sp"
+            />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/ovr"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/et_custom"
+            android:ems="10"
+            android:textSize="15sp"
+            android:hint="Ví dụ: 89"
+            android:inputType="number"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày mua/bán: "
+            android:layout_marginStart="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#1A1A12"
+            android:textSize="15sp"
+            />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/date"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/et_custom"
+            android:ems="10"
+            android:textSize="15sp"
+            android:hint="Nhập ngày"
+            android:inputType="date"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá cầu thủ: "
+            android:layout_marginStart="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="#1A1A12"
+            android:textSize="15sp"
+            />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/price"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/et_custom"
+            android:ems="10"
+            android:textSize="15sp"
+            android:hint="Ví dụ: 2345"
+            android:inputType="number"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#E3E9DD"
+            android:background="@drawable/selector"
+            android:id="@+id/cancel"
+            android:textAllCaps="false"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Hủy"
+            android:layout_marginStart="40dp"/>
+        <Button
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#E3E9DD"
+            android:background="@drawable/selector"
+            android:id="@+id/ok"
+            android:textAllCaps="false"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="OK"/>
+    </RelativeLayout>
+</LinearLayout>
